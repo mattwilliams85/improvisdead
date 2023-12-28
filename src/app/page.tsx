@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Image from 'next/Image';
+import Image from 'next/image';
 import * as React from 'react';
 import styles from './main.module.css'
 import { clsx } from 'clsx';

@@ -128,14 +128,13 @@
   transform: translateX(-20px)
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
   .playerWrap {
-    top: 60%;
-    transform: scale(90%) translateX(-37.5%);
+    top: 58%;
+    transform: scale(95%) translateX(-37.5%);
     left: calc(50% - 70px);
   }
 }
-
 
 @media screen and (min-width: 1000px) {
   .playerWrap {

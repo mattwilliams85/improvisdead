@@ -81,7 +81,7 @@ const Dust = () => {
     };
 
     // Set interval to update particles
-    const interval = setInterval(updateParticles, 350); // Update every 2000ms (2 seconds)
+    const interval = setInterval(updateParticles, 300); // Update every 2000ms (2 seconds)
 
     return () => {
       cancelAnimationFrame(animate);

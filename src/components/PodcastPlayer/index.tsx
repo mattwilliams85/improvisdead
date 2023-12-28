@@ -39,7 +39,10 @@ export default function PodcastPlayer() {
         ctx.arcTo(start, canvasRef.current.height + barHeight, start + cornerRadius, canvasRef.current.height + barHeight, cornerRadius);
         ctx.arcTo(start + bar_width, canvasRef.current.height + barHeight, start + bar_width, canvasRef.current.height + barHeight + cornerRadius, cornerRadius);
         ctx.lineTo(start + bar_width, canvasRef.current.height + barHeight + cornerRadius);
-        ctx.fillStyle = '#ddd6c9';
+        let grd = ctx.createLinearGradient(0, 0, canvasRef.current.width, 0);
+        grd.addColorStop(0.2, '#0b79ff');
+        grd.addColorStop(0.8, '#ff2c22');
+        ctx.fillStyle = grd;
         ctx.fill();
       }
     }
@@ -128,7 +131,9 @@ export default function PodcastPlayer() {
             </div>
           </div>
         </div>
-        <canvas className={styles.visualizer} ref={canvasRef} width={415} height={200} />
+        <div className={styles.visualizerWrap}>
+          <canvas className={styles.visualizer} ref={canvasRef} width={424} height={200} />
+        </div>
       </div>
       <div className={styles.stub}>
         <div className={styles.admitOne}>

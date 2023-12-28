@@ -1,9 +1,7 @@
 'use client'
 
 import { useEffect, useState, useRef } from 'react';
-import fetchFeed from '@/lib/rss';
 import styles from './styles.module.css';
-let animationController;
 
 export default function PodcastPlayer() {
   const [isPlaying, setIsPlaying] = useState<boolean>(false);

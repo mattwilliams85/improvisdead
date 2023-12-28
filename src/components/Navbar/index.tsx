@@ -6,10 +6,13 @@ import ModalTrigger from '@/components/ModalTrigger';
 import Logo from '~/svg/Logo.svg';
 
 export default function Navbar() {
-  function smoothScroll(id) {
-    document.querySelector(`#${id}`).scrollIntoView({
-      behavior: 'smooth'
-    });
+  function smoothScroll(id: string) {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+      });
+    }
   }
 
   return (

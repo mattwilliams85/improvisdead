@@ -60,6 +60,6 @@
 }
 
 @keyframes slideIn {
-  0% { transform: translateY(100%); opacity: 0 };
+  0% { transform: translateY(100%) translateX(-50%) ; opacity: 0 };
 }
 

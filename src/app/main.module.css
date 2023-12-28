@@ -365,7 +365,7 @@
 
   .center {
     position: relative;
-    width: 940px;
+    width: calc(100% - 32px);
     height: 100%;
     margin: 0 auto;
   }

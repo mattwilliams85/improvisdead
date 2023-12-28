@@ -9,18 +9,12 @@ export default function PodcastPlayer() {
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
   const [progress, setProgress] = useState<number>(0);
   const [currentTime, setCurrentTime] = useState<number>(0);
-  const [latestEpisodeUrl, setLatestEpisodeUrl] = useState<string | null>(null);
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const progressBarRef = useRef<HTMLDivElement | null>(null);
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const source = useRef<MediaElementAudioSourceNode | null>(null);
   const analyzer = useRef<AnalyserNode | null>(null);
   let animationController: number;
-
-  const fetchEpisode = async () => {
-    const feed = await fetchFeed();
-    setLatestEpisodeUrl(feed.items[0].enclosure.link);
-  }
 
   const visualizeData = () => {
     animationController = window.requestAnimationFrame(visualizeData);
@@ -31,8 +25,8 @@ export default function PodcastPlayer() {
     analyzer.current?.getByteFrequencyData(songData);
     const bar_width = 4;
     let start = 0;
-    let gap = 4;
-    let cornerRadius = 2;
+    const gap = 4;
+    const cornerRadius = 2;
     const ctx = canvasRef.current?.getContext("2d");
     if (ctx && canvasRef.current) {
       ctx.clearRect(0, 0, canvasRef.current.width, canvasRef.current.height);
@@ -56,7 +50,7 @@ export default function PodcastPlayer() {
   }
 
   const handleAudioPlay = () => {
-    let audioContext = new AudioContext();
+    const audioContext = new AudioContext();
     if (!source.current) {
       console.log(audioContext)
       source.current = audioContext.createMediaElementSource(audioRef.current);
@@ -68,8 +62,6 @@ export default function PodcastPlayer() {
   };
 
   useEffect(() => {
-    fetchEpisode();
-
     const audio = audioRef.current;
 
     const updateProgress = () => {

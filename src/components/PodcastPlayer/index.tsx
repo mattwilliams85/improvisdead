@@ -1,6 +1,6 @@
-'use client'
+'use client';
 
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef, useCallback } from 'react';
 import styles from './styles.module.css';
 
 export default function PodcastPlayer() {
@@ -12,12 +12,12 @@ export default function PodcastPlayer() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const source = useRef<MediaElementAudioSourceNode | null>(null);
   const analyzer = useRef<AnalyserNode | null>(null);
-  let animationController: number;
+  const animationController = useRef<number | null>(null);
 
-  const visualizeData = () => {
-    animationController = window.requestAnimationFrame(visualizeData);
+  const visualizeData = useCallback(() => {
+    animationController.current = window.requestAnimationFrame(visualizeData);
     if (audioRef.current?.paused) {
-      return cancelAnimationFrame(animationController);
+      return window.cancelAnimationFrame(animationController.current);
     }
     const songData = new Uint8Array(80);
     analyzer.current?.getByteFrequencyData(songData);
@@ -32,10 +32,8 @@ export default function PodcastPlayer() {
         const barHeight = -songData[i] / 5;
         start = i * (bar_width + gap);
 
-        // Draw the main part of the bar
         ctx.fillRect(start, canvasRef.current.height, bar_width, barHeight + cornerRadius);
 
-        // Draw the rounded top
         ctx.beginPath();
         ctx.moveTo(start, canvasRef.current.height + barHeight + cornerRadius);
         ctx.arcTo(start, canvasRef.current.height + barHeight, start + cornerRadius, canvasRef.current.height + barHeight, cornerRadius);
@@ -45,19 +43,20 @@ export default function PodcastPlayer() {
         ctx.fill();
       }
     }
-  }
+  }, []);
 
-  const handleAudioPlay = () => {
-    const audioContext = new AudioContext();
-    if (!source.current) {
-      console.log(audioContext)
-      source.current = audioContext.createMediaElementSource(audioRef.current);
-      analyzer.current = audioContext.createAnalyser();
-      source.current.connect(analyzer.current);
-      analyzer.current.connect(audioContext.destination);
+  const handleAudioPlay = useCallback(() => {
+    if (typeof window.AudioContext !== 'undefined' && audioRef.current) {
+      const audioContext = new AudioContext();
+      if (!source.current) {
+        source.current = audioContext.createMediaElementSource(audioRef.current);
+        analyzer.current = audioContext.createAnalyser();
+        source.current.connect(analyzer.current);
+        analyzer.current.connect(audioContext.destination);
+      }
+      visualizeData();
     }
-    visualizeData();
-  };
+  }, [visualizeData]);
 
   useEffect(() => {
     const audio = audioRef.current;

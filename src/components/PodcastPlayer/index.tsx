@@ -29,7 +29,7 @@ export default function PodcastPlayer() {
     if (ctx && canvasRef.current) {
       ctx.clearRect(0, 0, canvasRef.current.width, canvasRef.current.height);
       for (let i = 4; i < songData.length; i++) {
-        const barHeight = -songData[i] / 5;
+        const barHeight = -songData[i] / 5.5;
         start = i * (bar_width + gap);
 
         ctx.fillRect(start, canvasRef.current.height, bar_width, barHeight + cornerRadius);
@@ -40,8 +40,8 @@ export default function PodcastPlayer() {
         ctx.arcTo(start + bar_width, canvasRef.current.height + barHeight, start + bar_width, canvasRef.current.height + barHeight + cornerRadius, cornerRadius);
         ctx.lineTo(start + bar_width, canvasRef.current.height + barHeight + cornerRadius);
         let grd = ctx.createLinearGradient(0, 0, canvasRef.current.width, 0);
-        grd.addColorStop(0.2, '#0b79ff');
-        grd.addColorStop(0.8, '#ff2c22');
+        grd.addColorStop(0.25, '#0b79ff');
+        grd.addColorStop(0.75, '#ff2c22');
         ctx.fillStyle = grd;
         ctx.fill();
       }

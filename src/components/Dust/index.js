@@ -9,6 +9,7 @@ const Dust = () => {
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext('2d');
+    const particleSize = window.innerWidth < 768 ? 3 : 5
     canvas.width = window.innerWidth + 250;
     canvas.height = window.innerHeight;
 
@@ -16,7 +17,7 @@ const Dust = () => {
       constructor() {
         this.x = Math.random() * canvas.width;
         this.y = Math.random() * canvas.height;
-        this.size = Math.random() * 5;
+        this.size = Math.random() * particleSize;
         this.speedX = Math.random() * 2 - 1;
         this.speedY = Math.random() * 2 - 1;
         this.fade = 0; // New property for fading

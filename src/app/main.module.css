@@ -14,7 +14,7 @@
   position: relative; 
   background-repeat: no-repeat; 
   background-size: cover; 
-  height: 740px;
+  height: 650px;
   background: linear-gradient(90deg, #28C1AE 61.22%, #1EACAC 100%);
 }
 
@@ -57,7 +57,7 @@
 
 .sloganWrap {
   position: absolute;
-  top: 30%;
+  top: 120px;
   width: 100%;
   height: 0;
   display: flex;
@@ -66,16 +66,17 @@
 }
 
 .sloganWrap > div {
+  box-shadow: -3px 3px 2px 0px rgba(0, 0, 0, 0.25);
   position: absolute;
   background-color: white;
-  font-size: 24px;
-  /* transform: rotate(-3.646deg); */
+  font-size: 26px;
   padding: 0 2px;
 }
 
 .button {
+  background-color: #212C39;
   position: absolute;
-  top: 150px;
+  top: 145px;
   left: 50%;
   transform: translateX(-50%);
   color: white;
@@ -85,7 +86,7 @@
 }
 
 .sloganWrap div:nth-child(1) {
-  top: 0px;
+  top: -3px;
 }
 
 .sloganWrap div:nth-child(2) {
@@ -93,7 +94,7 @@
 }
 
 .sloganWrap div:nth-child(3) {
-  top: 80px;
+  top: 83px;
 }
 
 .socialBar {
@@ -178,13 +179,13 @@
 .hostsTitle {
   font-size: 44px;
   font-weight: bold;
-  margin-bottom: 60px;
+  margin-bottom: 16px;
 }
 
 .hostsColumns {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
   text-align: center;
 }
 
@@ -200,7 +201,7 @@
 .socialTab {
   width: 150px;
   height: 30px;
-  margin: 16px 0;
+  margin: 8px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -221,7 +222,7 @@
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  margin: 16px 0;
+  margin: 8px 0;
   background-repeat: no-repeat;
   background-size: cover;
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
@@ -323,6 +324,10 @@
 }
 
 @media screen and (min-width: 1000px) {
+  .sloganWrap div:nth-child(1) {
+    top: 0px;
+  }
+  
   .mobileOverlay {
     display: none;
   }
@@ -350,7 +355,12 @@
   .button {
     left: initial;
     transform: initial;
-    padding: 13px 60px;
+    padding: 12px 60px;
+    border: none;
+    top: 154px;
+    font-size: 17px;
+    border-bottom: 2px solid white;
+    border-left: 1px solid white;
   }
 
   .center {
@@ -369,7 +379,8 @@
   }
 
   .hostsText {
-    width: unset;
+    width: 275px;
+    font-size: 14px;
   }
 
   .hostsTitle {
@@ -410,8 +421,20 @@
     margin-top: 0;
   }
 
-  .button {
-    border: none;
+  .landingSection {
+    height: 740px;
+  }
+
+  .socialTab {
+    margin: 16px 0;
+  }
+
+  .hostsCircle {
+    margin: 16px 0;
+  }
+
+  #dan.spotlight {
+    left: 0px;
   }
 }
 

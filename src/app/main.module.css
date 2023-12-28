@@ -185,7 +185,7 @@
   width: 100%;
   background-size: cover;
   background-image: url('../../public/images/chicago.jpeg');
-  background-position: 35% center;
+  background-position: center;
 }
 
 .hostsTitle {
@@ -338,7 +338,7 @@
 
 @media screen and (min-width: 1000px) {
   .chicagoBackground {
-    background-position: bottom;
+    background-position: top;
   }
 
   .sloganWrap div:nth-child(1) {

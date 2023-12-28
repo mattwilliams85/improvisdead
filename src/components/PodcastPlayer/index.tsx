@@ -39,7 +39,7 @@ export default function PodcastPlayer() {
         ctx.arcTo(start, canvasRef.current.height + barHeight, start + cornerRadius, canvasRef.current.height + barHeight, cornerRadius);
         ctx.arcTo(start + bar_width, canvasRef.current.height + barHeight, start + bar_width, canvasRef.current.height + barHeight + cornerRadius, cornerRadius);
         ctx.lineTo(start + bar_width, canvasRef.current.height + barHeight + cornerRadius);
-        let grd = ctx.createLinearGradient(0, 0, canvasRef.current.width, 0);
+        const grd = ctx.createLinearGradient(0, 0, canvasRef.current.width, 0);
         grd.addColorStop(0.25, '#0b79ff');
         grd.addColorStop(0.75, '#ff2c22');
         ctx.fillStyle = grd;

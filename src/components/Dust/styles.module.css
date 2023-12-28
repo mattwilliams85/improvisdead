@@ -1,0 +1,18 @@
+.dust {
+  position: absolute;
+  z-index: 3;
+  height: calc(100% - 50px);
+  top: 50;
+  left: calc(12% - 170px);
+  mask-size: 1550px;
+  mask-repeat: no-repeat;
+  pointerEvents: none;
+  mask-image: url('../../../public/svg/Triangle.svg');
+}
+
+@media screen and (min-width: 1000px) {
+  .dust {
+    left: calc(19% - 170px);
+    mask-size: 1320px;
+  }
+}

@@ -1,0 +1,426 @@
+.mobileOverlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  opacity: 0.1;
+  z-index: 3;
+}
+
+.landingSection {
+  overflow: hidden; 
+  position: relative; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  height: 740px;
+  background: linear-gradient(90deg, #28C1AE 61.22%, #1EACAC 100%);
+}
+
+.staticDust {
+  background-image: url('../../public/images/dust_layer.png');
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  transform: scaleY(-1);
+  opacity: 0.7;
+}
+
+.center {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.triangle {
+  left: calc(20% - 170px);
+  position: absolute;
+  top: -10px;
+  height: 1200px;
+}
+
+.chair {
+  position: absolute;
+  bottom: -80px;
+  width: 500px;
+  left: 15%;
+  transform: rotate(4deg);
+  mix-blend-mode: hard-light;
+}
+
+.chairWrap {
+  background: red;
+}
+
+.sloganWrap {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  height: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+}
+
+.sloganWrap > div {
+  position: absolute;
+  background-color: white;
+  font-size: 24px;
+  /* transform: rotate(-3.646deg); */
+  padding: 0 2px;
+}
+
+.button {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  padding: 13px 54px;
+  font-weight: 500;
+  border: 2px solid white;
+}
+
+.sloganWrap div:nth-child(1) {
+  top: 0px;
+}
+
+.sloganWrap div:nth-child(2) {
+  top: 40px;
+}
+
+.sloganWrap div:nth-child(3) {
+  top: 80px;
+}
+
+.socialBar {
+  background: #283442;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  color: white;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 32px;
+}
+
+.socialWrap {
+  display: flex;
+}
+
+.socialBar svg {
+  width: 20px;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.follow {
+  padding-right: 16px;
+  font-weight: bold;
+}
+
+.patreon {
+  padding: 60px 0 120px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.patreonTitle {
+  color: #FF5C54;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.patreonSubtitle {
+  font-size: 26px;
+}
+
+.patreonDescription {
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  padding: 0 16px;
+}
+
+.patreonButton {
+  color: white;
+  position: relative;
+  margin-top: 32px;
+  display: inline-flex;
+  height: 70px;
+  padding: 24px 85px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border: 2px solid #212C39;
+}
+
+.patreonButton span {
+  mix-blend-mode: difference;
+}
+
+.hosts {
+  padding: 80px 0 120px;
+  position: relative;
+  color: white;
+  background-image: url('../../public/images/chicago.jpeg');
+  display: flex;
+  background-size: cover;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.hostsTitle {
+  font-size: 44px;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+.hostsColumns {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+}
+
+.hostsColumns > div {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  position: relative;
+}
+
+.socialTab {
+  width: 150px;
+  height: 30px;
+  margin: 16px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  background: black;
+}
+
+.socialTab svg {
+  width: 20px;
+  cursor: pointer;
+}
+
+.hostsCircleWrap {
+  position: relative;
+}
+
+.hostsCircle {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin: 16px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.danColumn {
+  display: flex !important;
+  flex-direction: column-reverse !important;
+}
+
+.danSubColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  margin-top: 40px;
+}
+
+.tim .hostsCircle {
+  background-image: url('../../public/images/tim.jpeg');
+}
+
+.dan .hostsCircle {
+  background-image: url('../../public/images/dan.jpeg');
+}
+
+.damian .hostsCircle {
+  background-image: url('../../public/images/damian.jpg');
+}
+
+.hostsText {
+  width: 100vw;
+  padding: 0 16px;
+  max-width: 500px;
+}
+
+.spotlight {
+  position: absolute;
+  bottom: 115px;
+  left: 0;
+  width: 200px;
+  opacity: 0;
+  transform-origin: bottom;
+}
+
+.largeFont {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer {
+  padding: 60px 24px;
+  background-color: #323538;
+  color: white;
+}
+
+.footerBottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.sitemap div {
+  margin-bottom: 8px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.socialList {
+  width: 185px;
+  margin-top: 0;
+}
+
+.socialList hr {
+  margin: 8px 0 16px;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 16px;
+}
+
+.socialLinks svg {
+  width: 24px;
+  cursor: pointer;
+}
+
+.socialListWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.link {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 1000px) {
+  .mobileOverlay {
+    display: none;
+  }
+  
+  .sloganWrap {
+    top: 40%;
+    position: absolute;
+    background-color: white;
+    left: 24px;
+    display: block;
+  }
+
+  .patreonDescription {
+    width: 480px;
+  }
+
+  .patreonTitle {
+    font-size: 96px;
+  }
+
+  .sloganWrap > div {
+    transform: rotate(-3.646deg);
+  }
+
+  .button {
+    left: initial;
+    transform: initial;
+    padding: 13px 60px;
+  }
+
+  .center {
+    position: relative;
+    width: 940px;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .triangle {
+    left: calc(25% - 170px);
+  }
+
+  .chair {
+    left: 23%;
+  }
+
+  .hostsText {
+    width: unset;
+  }
+
+  .hostsTitle {
+    font-size: 75px;
+    margin-bottom: 60px;
+  }
+
+  .hostsColumns {
+    flex-direction: row;
+    gap: 80px;
+  }
+
+  .danColumn {
+    flex-direction: column !important;
+  }
+
+  .danSubColumn {
+    flex-direction: column-reverse;
+  }
+
+  .socialListWrap {
+    flex-direction: row;
+    margin-top: 0;
+  }
+
+  .socialList {
+    margin-top: 56px;
+  }
+
+  .footerBottom {
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row;
+  }
+
+  .copyright {
+    text-align: right;
+    margin-top: 0;
+  }
+
+  .button {
+    border: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .center {
+    width: 1280px;
+  }
+
+  .triangle {
+    height: initial;
+  }
+}

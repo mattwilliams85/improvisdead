@@ -1,0 +1,53 @@
+.navbar {
+  display: flex; 
+  position: relative; 
+  z-index: 2;
+  padding-right: 24px; 
+  gap: 24px; 
+  justify-content: flex-end; 
+  align-items: center; 
+  font-weight: 700; 
+  color: #ffffff; 
+  height: 50px;
+  background: #2370ce;
+  font-size: 14px;
+  z-index: 4;
+}
+
+.navbar div:hover {
+  color: #163c6d;
+}
+
+.navbar div {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logo {
+  width: 95%; 
+  background-color: black;
+  max-width: 800px;
+  position: absolute;
+  top: 60px;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+@media screen and (min-width: 1000px) {
+  .navbar {
+    font-size: 16px;
+  }
+
+  .logo {
+    background-color: unset;
+    transform: unset;
+    left: initial;
+    top: 20%;
+    left: 56px;
+    width: 50%; 
+    margin: 0;
+  }
+}
+

@@ -1,0 +1,65 @@
+.overlay {
+  background: black;
+  opacity: 0.3;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.modalWrap {
+  display: none;
+}
+
+.modal {
+  z-index: 101;
+  position: fixed;
+  animation: slideIn 0.3s;
+  height: 200px;
+  margin: 0 auto;
+  width: calc(100% - 32px);
+  background: white;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: -8px 8px 4px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+}
+
+.links {
+  padding: 40px 24px 16px 24px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.links svg {
+  height: 50px;
+  width: 50px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 8px 16px;
+}
+
+@media screen and (min-width: 1000px) {
+  .modal {
+    width: 500px;
+  }
+
+  .links {
+    padding: 40px 60px 16px 60px;
+  }
+}
+
+@keyframes slideIn {
+  0% { transform: translateY(100%); opacity: 0 };
+}
+

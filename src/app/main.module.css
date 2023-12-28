@@ -74,6 +74,7 @@
 }
 
 .button {
+  width: 200px;
   background-color: #212C39;
   position: absolute;
   top: 140px;
@@ -379,6 +380,7 @@
 
   .button {
     left: initial;
+    width: initial;
     transform: initial;
     padding: 12px 70px;
     font-size: 16px;

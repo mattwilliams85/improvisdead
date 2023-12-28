@@ -41,7 +41,7 @@ export default function PodcastPlayer() {
         ctx.lineTo(start + bar_width, canvasRef.current.height + barHeight + cornerRadius);
         const grd = ctx.createLinearGradient(0, 0, canvasRef.current.width, 0);
         grd.addColorStop(0.25, '#0b79ff');
-        grd.addColorStop(0.75, '#ff2c22');
+        grd.addColorStop(0.75, '#4F4F4F');
         ctx.fillStyle = grd;
         ctx.fill();
       }

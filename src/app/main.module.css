@@ -5,7 +5,7 @@
   top: 0;
   left: 0;
   background: black;
-  opacity: 0.1;
+  opacity: 0.13;
   z-index: 3;
 }
 
@@ -69,15 +69,16 @@
   box-shadow: -3px 3px 2px 0px rgba(0, 0, 0, 0.25);
   position: absolute;
   background-color: white;
-  font-size: 26px;
+  font-size: 23px;
   padding: 0 2px;
 }
 
 .button {
   background-color: #212C39;
   position: absolute;
-  top: 145px;
+  top: 140px;
   left: 50%;
+  font-size: 18px;
   transform: translateX(-50%);
   color: white;
   padding: 13px 54px;
@@ -90,11 +91,11 @@
 }
 
 .sloganWrap div:nth-child(2) {
-  top: 40px;
+  top: 37px;
 }
 
 .sloganWrap div:nth-child(3) {
-  top: 83px;
+  top: 77px;
 }
 
 .socialBar {
@@ -168,12 +169,21 @@
   padding: 80px 0 120px;
   position: relative;
   color: white;
-  background-image: url('../../public/images/chicago.jpeg');
   display: flex;
-  background-size: cover;
   align-items: center;
   flex-direction: column;
   overflow: hidden;
+}
+
+.chicagoBackground {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  width: 100%;
+  background-size: cover;
+  background-image: url('../../public/images/chicago.jpeg');
+  background-position: 35% center;
 }
 
 .hostsTitle {
@@ -324,8 +334,20 @@
 }
 
 @media screen and (min-width: 1000px) {
+  .chicagoBackground {
+    background-position: bottom;
+  }
+
   .sloganWrap div:nth-child(1) {
-    top: 0px;
+    top: -7px;
+  }
+  
+  .sloganWrap div:nth-child(2) {
+    top: 34px;
+  }
+  
+  .sloganWrap div:nth-child(3) {
+    top: 78px;
   }
   
   .mobileOverlay {
@@ -350,12 +372,14 @@
 
   .sloganWrap > div {
     transform: rotate(-3.646deg);
+    font-size: 26px;
   }
 
   .button {
     left: initial;
     transform: initial;
-    padding: 12px 60px;
+    padding: 12px 70px;
+    font-size: 16px;
     border: none;
     top: 154px;
     font-size: 17px;
@@ -445,5 +469,9 @@
 
   .triangle {
     height: initial;
+  }
+
+  .chicagoBackground {
+    filter: blur(1px);
   }
 }

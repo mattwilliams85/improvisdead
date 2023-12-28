@@ -80,6 +80,7 @@ export default function HomePage() {
         </div>
       </section >
       <section className={styles.hosts} id='hosts'>
+        <div className={styles.chicagoBackground} />
         <div className={styles.hostsTitle}>Meet the Hosts!</div>
         <div className={styles.hostsColumns}>
           <div>

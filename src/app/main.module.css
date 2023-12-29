@@ -178,6 +178,7 @@
 
 .chicagoBackground {
   position: absolute;
+  filter: brightness(0.9);
   height: 100%;
   width: 100%;
   left: 0;
@@ -476,6 +477,6 @@
   }
 
   .chicagoBackground {
-    filter: blur(1px);
+    filter: blur(1px) brightness(0.9);;
   }
 }

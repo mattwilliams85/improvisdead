@@ -93,20 +93,18 @@ export default function HomePage() {
               <a href="https://twitter.com/TimLyons" target="_blank"><Twitter className="grow" /></a>
               <a href="https://www.tiktok.com/@thrsttraptim" target="_blank"> <Tiktok className="grow" /></a>
             </div>
-            <div className={styles.hostsText}>Muffin jelly lemon drops pastry jelly beans jelly beans tiramisu. Shortbread jelly beans wafer macaroon pastry candy canes cheesecake marzipan.</div>
           </div>
           <div className={styles.danColumn}>
             <div className={styles.danSubColumn}>
+              <div className={clsx(styles.hostsCircleWrap, styles.dan)}>
+                <Spotlight className={styles.spotlight} id="dan" />
+                <div className={styles.hostsCircle} />
+              </div>
               <div className={styles.largeFont}>DAN WHITE</div>
               <div className={styles.socialTab}>
                 <a href="https://twitter.com/atdanwhite" target="_blank"><Twitter className="grow" /></a>
                 <a href="https://www.instagram.com/atdanwhite/" target="_blank"><Instagram className="grow" /></a>
               </div>
-              <div className={styles.hostsText}>Chocolate cake cotton candy cheesecake icing macaroon pie. Lemon drops candy canes lollipop gummi bears topping danish marzipan jelly-o pudding</div>
-            </div>
-            <div className={clsx(styles.hostsCircleWrap, styles.dan)}>
-              <Spotlight className={styles.spotlight} id="dan" />
-              <div className={styles.hostsCircle} />
             </div>
           </div>
           <div>
@@ -118,8 +116,10 @@ export default function HomePage() {
             <div className={styles.socialTab}>
               <a href="https://twitter.com/damiananaya" target="_blank"><Twitter className="grow" /></a>
             </div>
-            <div className={styles.hostsText}>Biscuit cheesecake gingerbread brownie ice cream croissant wafer chupa chups. Ice cream dessert cookie donut chocolate cake soufflé chocolate marzipan.</div>
           </div>
+        </div>
+        <div className={styles.hostText}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer malesuada nunc vel risus commodo viverra. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est. Nibh cras pulvinar mattis nunc sed blandit libero volutpat sed. Condimentum lacinia quis vel eros donec. Elit duis tristique sollicitudin nibh sit amet. Amet massa vitae tortor condimentum lacinia quis vel eros donec. Dis parturient montes nascetur ridiculus mus mauris vitae. Viverra nam libero justo laoreet sit. Facilisis gravida neque convallis a cras semper auctor. Scelerisque viverra mauris in aliquam sem fringilla ut morbi.
         </div>
       </section>
       <footer className={styles.footer}>

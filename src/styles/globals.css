@@ -184,7 +184,7 @@
 
 @media screen and (min-width: 1000px) {
   .danAnimation {
-    transform: rotate(180deg);
+    transform: rotate(0deg);
   }
   
   .timAnimation {

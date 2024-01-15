@@ -88,10 +88,12 @@ export default function HomePage() {
               <Spotlight className={styles.spotlight} id="tim" />
               <div className={styles.hostsCircle} />
             </div>
-            <div className={styles.largeFont}>TIM LYONS</div>
-            <div className={styles.socialTab}>
-              <a href="https://twitter.com/TimLyons" target="_blank"><Twitter className="grow" /></a>
-              <a href="https://www.tiktok.com/@thrsttraptim" target="_blank"> <Tiktok className="grow" /></a>
+            <div className={styles.timWrap}>
+              <div className={styles.largeFont}>TIM LYONS</div>
+              <div className={styles.socialTab}>
+                <a href="https://twitter.com/TimLyons" target="_blank"><Twitter className="grow" /></a>
+                <a href="https://www.tiktok.com/@thrsttraptim" target="_blank"> <Tiktok className="grow" /></a>
+              </div>
             </div>
           </div>
           <div className={styles.danColumn}>
@@ -112,9 +114,11 @@ export default function HomePage() {
               <Spotlight className={styles.spotlight} id="damian" />
               <div className={styles.hostsCircle} />
             </div>
-            <div className={styles.largeFont}>DAMIAN ANAYA</div>
-            <div className={styles.socialTab}>
-              <a href="https://twitter.com/damiananaya" target="_blank"><Twitter className="grow" /></a>
+            <div className={styles.damianWrap}>
+              <div className={styles.largeFont}>DAMIAN ANAYA</div>
+              <div className={styles.socialTab}>
+                <a href="https://twitter.com/damiananaya" target="_blank"><Twitter className="grow" /></a>
+              </div>
             </div>
           </div>
         </div>

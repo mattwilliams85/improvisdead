@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import type { Metadata } from 'next'
 import Image from 'next/image';
 import * as React from 'react';
 import styles from './main.module.css'
@@ -25,14 +25,15 @@ import Spotify from '~/svg/Spotify.svg';
 import Spotlight from '~/svg/Spotlight.svg';
 import chair from '~/images/chair.png'
 
+export const metadata: Metadata = {
+  title: 'Improv Is Dead'
+}
+
 export default function HomePage() {
   return (
     <main id="main" >
       <Modal />
       <IntersectionObserver />
-      <Head>
-        <title>Improv Is Dead</title>
-      </Head>
       <section className={styles.landingSection}>
         <Navbar />
         <div className={styles.staticDust} />

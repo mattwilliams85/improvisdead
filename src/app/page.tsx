@@ -119,7 +119,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className={styles.hostText}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer malesuada nunc vel risus commodo viverra. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est. Nibh cras pulvinar mattis nunc sed blandit libero volutpat sed. Condimentum lacinia quis vel eros donec. Elit duis tristique sollicitudin nibh sit amet. Amet massa vitae tortor condimentum lacinia quis vel eros donec. Dis parturient montes nascetur ridiculus mus mauris vitae. Viverra nam libero justo laoreet sit. Facilisis gravida neque convallis a cras semper auctor. Scelerisque viverra mauris in aliquam sem fringilla ut morbi.
+          Tim, Dan, and Damian are three best buds who've been weaving comedy gold for nearly a decade. Famous for their performances with Chicago's legendary FUDGE team, they rocked iO Chicago's stage for five fun-filled years. Today, they're keeping the laughs alive from the comfort of their apartments with the uproarious 'IMPROV IS DEAD' podcast - weekly shenanigans guaranteed.
         </div>
       </section>
       <footer className={styles.footer}>

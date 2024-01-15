@@ -233,8 +233,8 @@
 }
 
 .hostsCircle {
-  height: 200px;
-  width: 200px;
+  height: 220px;
+  width: 220px;
   border-radius: 50%;
   margin: 8px 0;
   background-repeat: no-repeat;
@@ -266,9 +266,9 @@
 }
 
 .hostText {
-  color: white;
   position: relative;
   font-size: 18px;
+  font-weight: bold;
   max-width: 900px;
   text-align: center;
   margin-top: 20px;
@@ -279,7 +279,7 @@
   position: absolute;
   bottom: 115px;
   left: 0;
-  width: 200px;
+  width: 220px;
   opacity: 0;
   transform-origin: bottom;
 }

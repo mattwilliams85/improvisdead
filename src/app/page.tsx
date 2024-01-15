@@ -26,7 +26,21 @@ import Spotlight from '~/svg/Spotlight.svg';
 import chair from '~/images/chair.png'
 
 export const metadata: Metadata = {
-  title: 'Improv Is Dead'
+  title: 'Improv Is Dead',
+  openGraph: {
+    title: 'Podcast | Improv Is Dead',
+    description: 'The React Framework for the Web',
+    url: 'https://improvisdead.com',
+    images: [
+      {
+        url: 'https://artwork.captivate.fm/9bf2775f-d0de-49e4-ac93-d587b10f1a3e/kLmWt4uPuRgnBuzr8DHluxPP.jpg',
+        width: 600,
+        height: 600,
+      }
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
 }
 
 export default function HomePage() {

@@ -188,6 +188,13 @@
   background-size: cover;
   background-image: url('../../public/images/chicago.jpeg');
   background-position: center;
+  filter: brightness(0.95);
+}
+
+.damianWrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .hostsTitle {
@@ -276,6 +283,15 @@
   padding: 16px;
 }
 
+/* .hostSpan {
+  color: #333;
+  font-weight: 500;
+  background: white;
+  padding: 0 4px;
+  -webkit-box-decoration-break: clone;
+  line-height: 1.65em;
+} */
+
 .spotlight {
   position: absolute;
   bottom: 115px;
@@ -354,15 +370,11 @@
 
   .hostText {
     font-size: 22px;
-    margin-top: 80px;
+    margin-top: 70px;
   }
 
   .danColumn {
     transform: translateY(50px);
-  }
-
-  .chicagoBackground {
-    background-position: top;
   }
 
   .sloganWrap div:nth-child(1) {
@@ -466,11 +478,11 @@
   }
 
   .socialTab {
-    margin: 16px 0;
+    margin: 8px 0;
   }
 
   .hostsCircle {
-    margin: 16px 0;
+    margin: 12px 0;
   }
 
   #dan.spotlight {
@@ -485,9 +497,5 @@
 
   .triangle {
     height: initial;
-  }
-
-  .chicagoBackground {
-    filter: brightness(0.9);;
   }
 }

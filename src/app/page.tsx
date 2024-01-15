@@ -123,7 +123,11 @@ export default function HomePage() {
           </div>
         </div>
         <div className={styles.hostText}>
-          Tim, Dan, and Damian are three best buds who've been weaving comedy gold for nearly a decade. Famous for their performances with Chicago's legendary FUDGE team, they rocked iO Chicago's stage for five fun-filled years. Today, they're keeping the laughs alive from the comfort of their apartments with the uproarious 'IMPROV IS DEAD' podcast - weekly shenanigans guaranteed.
+          <p>
+            <span className={styles.hostSpan}>
+              Tim, Dan, and Damian are three best buds who've been weaving comedy gold for nearly a decade. Famous for their performances with Chicago's legendary FUDGE team, they rocked iO Chicago's stage for five fun-filled years. Today, they're keeping the laughs alive from the comfort of their apartments with the uproarious 'IMPROV IS DEAD' podcast - weekly shenanigans guaranteed.
+            </span>
+          </p>
         </div>
       </section>
       <footer className={styles.footer}>

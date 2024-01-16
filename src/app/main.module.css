@@ -188,7 +188,7 @@
   background-size: cover;
   background-image: url('../../public/images/chicago.jpeg');
   background-position: center;
-  filter: brightness(0.95);
+  filter: brightness(0.95) hue-rotate(350deg);
 }
 
 .damianWrap {

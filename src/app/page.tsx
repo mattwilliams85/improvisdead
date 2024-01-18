@@ -95,6 +95,7 @@ export default function HomePage() {
         </div>
       </section >
       <section className={styles.hosts} id='hosts'>
+        <video src={'files/greyfudge.mp4'} className={styles.video} autoPlay loop muted />
         <div className={styles.chicagoBackground} />
         <div className={styles.hostsTitle}>Meet the Hosts!</div>
         <div className={styles.hostsColumns}>
@@ -140,8 +141,7 @@ export default function HomePage() {
         <div className={styles.hostText}>
           <p>
             <span className={styles.hostSpan}>
-              Tim, Dan, and Damian are three best buds who've been weaving comedy gold for nearly a decade. Famous for their performances with Chicago's legendary FUDGE team, they rocked iO Chicago's stage for five fun-filled years. Today, they're keeping the laughs alive from the comfort of their apartments with the uproarious 'IMPROV IS DEAD' podcast - weekly shenanigans guaranteed.
-            </span>
+              "Damian, Dan, and Tim have been performing comedy together for over 8 years starting in Chicago where they performed at the famous iO Theater under the alias FUDGE. After a five year run and one pandemic, they turned their long running live show style into an improv podcast featuring sound effects, music, and guests from all over film and TV. Strap on your headphones and let them tickle your delicate ear drums every Tuesday.            </span>
           </p>
         </div>
       </section>

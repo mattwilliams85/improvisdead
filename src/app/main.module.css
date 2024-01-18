@@ -186,7 +186,8 @@
   top: 0;
   width: 100%;
   background-size: cover;
-  background-image: url('../../public/images/chicago.jpeg');
+  opacity: 0.8;
+  background: linear-gradient(#283442 30%, #000 70%);
   background-position: center;
   filter: brightness(0.95) hue-rotate(350deg);
 }
@@ -228,7 +229,7 @@
   justify-content: center;
   align-items: center;
   gap: 24px;
-  background: black;
+  background: #2370ce;
 }
 
 .socialTab svg {
@@ -283,6 +284,15 @@
   padding: 16px;
 }
 
+.video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 /* .hostSpan {
   color: #333;
   font-weight: 500;
@@ -299,6 +309,7 @@
   width: 220px;
   opacity: 0;
   transform-origin: bottom;
+  display: none;
 }
 
 .largeFont {
@@ -444,8 +455,7 @@
 
   .hostsTitle {
     font-size: 75px;
-    margin-bottom: 60px;
-    transform: rotate(-2deg) translateX(10px);
+    margin-bottom: 40px;
   }
 
   .hostsColumns {

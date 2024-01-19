@@ -185,11 +185,7 @@
   left: 0;
   top: 0;
   width: 100%;
-  background-size: cover;
-  opacity: 0.8;
-  background: linear-gradient(#283442 30%, #000 70%);
-  background-position: center;
-  filter: brightness(0.95) hue-rotate(350deg);
+  background: linear-gradient(141deg, rgb(40 193 174) 25%, rgb(40 52 66) 25%, rgb(40 52 66) 75%, rgb(35 112 206) 75%);
 }
 
 .damianWrap {
@@ -229,7 +225,7 @@
   justify-content: center;
   align-items: center;
   gap: 24px;
-  background: #2370ce;
+  background: #ee554d;
 }
 
 .socialTab svg {

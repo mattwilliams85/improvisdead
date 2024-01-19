@@ -95,7 +95,7 @@ export default function HomePage() {
         </div>
       </section >
       <section className={styles.hosts} id='hosts'>
-        <video src={'files/greyfudge.mp4'} className={styles.video} autoPlay loop muted />
+        <div className={styles.video} />
         <div className={styles.chicagoBackground} />
         <div className={styles.hostsTitle}>Meet the Hosts!</div>
         <div className={styles.hostsColumns}>
